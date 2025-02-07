@@ -9,7 +9,7 @@ const doctors = [
 const Doctors = () => {
   return (
     <section className="bg-white py-10 text-center">
-      <h2 className="text-3xl text-teal-700 mb-6">OUR TOP DOCTORS</h2>
+      <h2 className="text-3xl font-bold text-teal-700 mb-6">OUR TOP DOCTORS</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {doctors.map((doctor, index) => (
           <div key={index} className="bg-white p-6 shadow-lg rounded-lg w-64 text-center hover:scale-110 transition">
