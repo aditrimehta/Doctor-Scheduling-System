@@ -1,11 +1,17 @@
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import Services from "./components/Services";
+import Doctors from "./components/Doctors";
+import AboutUs from "./components/AboutUs";
+import "./index.css";
 
 function App() {
   return (
-    <div className="main">
-      <header>
-        <h1>doctor system</h1>
-      </header>
+    <div>
+      <Header />
+      <Services />
+      <Doctors />
+      <AboutUs />
     </div>
   );
 }
