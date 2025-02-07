@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Login from "./Login";
-import Signup from "./Signup";
+import Signup from  "./SignUp"
 
 const Header = () => {
   const [showLogin, setShowLogin] = useState(false);
