@@ -41,7 +41,7 @@ def deleteuser(mydb,email):
     mydb.commit()
     print("deleted")
 
-#cursor= mydb.cursor()
+cursor= mydb.cursor()
 #cursor.execute("CREATE DATABASE mydatabase")
 
 #query="CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(255), password VARCHAR(255))"
@@ -53,3 +53,8 @@ def deleteuser(mydb,email):
 #signup(mydb,"aditri","aditrixmehta","adi")
 #login(mydb,"aditrixmehta","adi")
 #deleteuser(mydb,"aditrixmehta")
+# cursor.execute("SELECT * FROM users")
+
+# rows = cursor.fetchall()
+# for row in rows:
+#     print(row)  
