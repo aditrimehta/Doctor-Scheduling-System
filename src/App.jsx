@@ -1,18 +1,17 @@
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import React from "react";
-import Header from "./components/Header";
-import Services from "./components/Services";
-import Doctors from "./components/Doctors";
-import AboutUs from "./components/AboutUs";
+import HomePage from "./pages/HomePage";
+import DoctorPage from "./pages/DoctorPage";
 import "./index.css";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Services />
-      <Doctors />
-      <AboutUs />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/doctorpage" element={<DoctorPage />} />
+      </Routes>
+    </Router>
   );
 }
 
