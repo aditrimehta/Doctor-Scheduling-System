@@ -17,7 +17,7 @@ const Services = () => {
       <h2 className="text-3xl font-bold text-teal-700 mb-6">OUR SERVICES</h2>
       <div className="flex flex-wrap justify-center gap-4">
         {services.map((service, index) => (
-          <div key={index} className="bg-white p-6 shadow-lg rounded-lg w-48 text-center hover:scale-110 transition" onClick={() => service.link && navigate(service.link)} >
+          <div key={index} className="bg-white p-6 shadow-lg w-48 text-center hover:scale-110 transition" onClick={() => service.link && navigate(service.link)} >
             <img src={service.icon} alt={service.name} className="mx-auto mb-4 h-12" />
             <p className="text-gray-700">{service.name}</p>
           </div>

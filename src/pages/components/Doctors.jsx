@@ -12,7 +12,7 @@ const Doctors = () => {
       <h2 className="text-3xl font-bold text-teal-700 mb-6">OUR TOP DOCTORS</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {doctors.map((doctor, index) => (
-          <div key={index} className="bg-white p-6 shadow-lg rounded-lg w-64 text-center hover:scale-110 transition">
+          <div key={index} className="bg-white p-6 shadow-lg w-64 text-center hover:scale-110 transition">
             <img src={doctor.image} alt={doctor.name} className="rounded-full w-20 mx-auto mb-4" />
             <h3 className="text-teal-700 text-lg font-semibold">{doctor.name}</h3>
             <p className="text-gray-600 text-sm">{doctor.specialty} | {doctor.experience} exp</p>

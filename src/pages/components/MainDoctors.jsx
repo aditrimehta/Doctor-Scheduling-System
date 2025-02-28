@@ -111,7 +111,7 @@ function MainDoctors() {
         {doctors.map((doctor, index) => (
     <div 
       key={index} 
-      className="bg-white p-6 shadow-lg rounded-lg w-full flex items-center gap-6 hover:scale-105 transition"
+      className="bg-white p-6 shadow-lg  w-full flex items-center gap-6 hover:scale-105 transition"
     >
       {/* Doctor Image (Left) */}
       <img 
