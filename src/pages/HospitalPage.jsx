@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "./components/Header"; 
 import MainHospitals from "./components/MainHospitals";
-import HospitalFilter from "./components/HospitalFilter";
+import NavBar from "./components/NavBar";
+
 function HospitalPage(){
     return(
         <div>
             <Header/>
-            
+            <NavBar/>
             <MainHospitals/>
         </div>
     );
