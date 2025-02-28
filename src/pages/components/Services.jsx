@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const services = [
   { name: "Book Appointment", icon: "logos/appointment.png" },
   { name: "Find Doctor", icon: "logos/doctor.png",link: "/doctorpage" },
-  { name: "Find Hospital", icon: "logos/hospital.png" },
+  { name: "Find Hospital", icon: "logos/hospital.png", link: "/hospitalpage" },
   { name: "Online Check-Up", icon: "logos/checkup.png" },
   { name: "Buy Medicine", icon: "logos/medicine.png" }
 ];
