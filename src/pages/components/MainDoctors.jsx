@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const doctors = [
   {
@@ -9,6 +10,8 @@ const doctors = [
     location: "Navi Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 4000"
+  
   },
   {
     name: "Dr. Riya Sharma",
@@ -18,6 +21,7 @@ const doctors = [
     location: "Thane",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 1000"
   },
   {
     name: "Dr. Rajesh Khanna",
@@ -27,6 +31,7 @@ const doctors = [
     location: "Navi Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 5000"
   },
   {
     name: "Dr. Priya Mehta",
@@ -36,6 +41,7 @@ const doctors = [
     location: "Mumbai",
     languages: "English, Marathi, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 2000"
   },
   {
     name: "Dr. Aakash Verma",
@@ -45,6 +51,7 @@ const doctors = [
     location: "Thane",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 4000"
   },
   {
     name: "Dr. Neha Agarwal",
@@ -54,6 +61,7 @@ const doctors = [
     location: "Navi Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 3000"
   },
   {
     name: "Dr. Aman Patel",
@@ -63,6 +71,7 @@ const doctors = [
     location: "Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 1000"
   },
   {
     name: "Dr. Sanya Kapoor",
@@ -72,6 +81,7 @@ const doctors = [
     location: "Thane",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 2500"
   },
   {
     name: "Dr. Kunal Joshi",
@@ -81,6 +91,7 @@ const doctors = [
     location: "Mumbai",
     languages: "English, Hindi, Marathi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 5000"
   },
   {
     name: "Dr. Parul Thakkar",
@@ -90,6 +101,7 @@ const doctors = [
     location: "Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 2000"
   },
   {
     name: "Dr. Rahul Nair",
@@ -99,6 +111,7 @@ const doctors = [
     location: "Thane",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 3500"
   },
   {
     name: "Dr. Meera Iyer",
@@ -108,6 +121,7 @@ const doctors = [
     location: "Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: "Rs. 2500"
   },
 ];
 
@@ -189,11 +203,13 @@ function MainDoctors() {
                 <p className="text-gray-600 text-sm">{doctor.hospital}</p>
                 <p className="text-gray-600 text-sm">📍 {doctor.location}</p>
                 <p className="text-gray-600 text-sm">Languages: {doctor.languages}</p>
+                <Link to="/book-appointment" state={{ doctor }}>
                 <button
                   className="mt-4 bg-teal-700 text-white px-4 py-2 rounded-md hover:bg-white hover:text-teal-700 border-2 border-teal-700 self-start"
                 >
                   BOOK APPOINTMENT
                 </button>
+                </Link>
               </div>
             </div>
           ))}

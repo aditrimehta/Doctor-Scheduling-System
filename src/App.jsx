@@ -3,6 +3,7 @@ import React from "react";
 import HomePage from "./pages/HomePage";
 import DoctorPage from "./pages/DoctorPage";
 import HospitalPage from "./pages/HospitalPage";
+import BookAppointment from "./pages/BookAppointment";
 import "./index.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/doctorpage" element={<DoctorPage />} />
         <Route path="/hospitalpage" element={<HospitalPage/>} />
+        <Route path="/book-appointment" element={<BookAppointment />} />
       </Routes>
     </Router>
   );
