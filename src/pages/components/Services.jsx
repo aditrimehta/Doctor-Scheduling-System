@@ -5,7 +5,7 @@ const services = [
   { name: "Find Doctor", icon: "logos/doctor.png",link: "/doctorpage" },
   { name: "Find Hospital", icon: "logos/hospital.png", link: "/hospitalpage" },
   { name:"Testimonials", icon: "logos/checkup.png" ,link: "/testimonials"},
-  { name: "Buy Medicine", icon: "logos/medicine.png" }
+  { name: "Buy Medicine", icon: "logos/medicine.png",link:"/buymedicines" }
 ];
 
 
