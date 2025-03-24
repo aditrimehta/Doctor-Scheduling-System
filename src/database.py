@@ -53,8 +53,14 @@ cursor= mydb.cursor()
 #signup(mydb,"aditri","aditrixmehta","adi")
 #login(mydb,"aditrixmehta","adi")
 #deleteuser(mydb,"aditrixmehta")
-# cursor.execute("SELECT * FROM users")
+cursor.execute("SELECT * FROM users")
 
-# rows = cursor.fetchall()
-# for row in rows:
-#     print(row)  
+rows = cursor.fetchall()
+for row in rows:
+    print(row)  
+
+# deleteuser(mydb,"aditrixmehta")
+# deleteuser(mydb,"aditriamitmehta@gmail.com")
+# deleteuser(mydb,"khushi")
+# deleteuser(mydb,"selly@gmail.com")
+# deleteuser(mydb,"ananya@fcv.cjc")
