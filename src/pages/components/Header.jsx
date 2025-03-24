@@ -1,14 +1,18 @@
 import React, { useState } from "react";
+import { useCart } from "../../context/CartContext";
 import Login from "./Login";
 import Signup from "./SignUp";
+import { Link } from "react-router-dom"; // Ensure this is imported for navigation
 
 const Header = ({ isAuthenticated, setIsAuthenticated }) => {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const { cart } = useCart(); // Access cart state
 
   return (
     <header className="bg-white p-6 flex justify-between items-center border-b-4 border-red-500">
+      {/* Logo and Site Name */}
       <div className="flex items-center">
         <img src="/logo.png" alt="Logo" className="h-16" />
         <div className="ml-4 flex flex-col">
@@ -17,7 +21,8 @@ const Header = ({ isAuthenticated, setIsAuthenticated }) => {
         </div>
       </div>
 
-      <div className="flex gap-4 ">
+      {/* Authentication & Cart */}
+      <div className="flex gap-4 items-center">
         {!isAuthenticated ? (
           <>
             <button
@@ -53,6 +58,11 @@ const Header = ({ isAuthenticated, setIsAuthenticated }) => {
             )}
           </div>
         )}
+
+        {/* Cart Button */}
+        <Link to="/cart" className="relative border border-teal-700 px-4 py-2 rounded-md text-teal-700 hover:bg-teal-700 hover:text-white">
+          Cart ({cart.length})
+        </Link>
       </div>
 
       {showLogin && <Login onClose={() => setShowLogin(false)} onLogin={() => setIsAuthenticated(true)} />}

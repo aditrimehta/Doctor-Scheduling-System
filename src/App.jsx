@@ -5,6 +5,7 @@ import DoctorPage from "./pages/DoctorPage";
 import HospitalPage from "./pages/HospitalPage";
 import BookAppointment from "./pages/BookAppointment";
 import TestimonialPage from "./pages/TestimonialPage";
+import Cart from "./pages/Cart";
 import "./index.css";
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Route path="/hospitalpage" element={<HospitalPage/>} />
         <Route path="/book-appointment" element={<BookAppointment />} />
         <Route path="/testimonials" element={<TestimonialPage />} />
+        <Route path="/cart" element={<Cart />} />
+
       </Routes>
     </Router>
   );

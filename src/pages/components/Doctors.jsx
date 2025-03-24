@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const doctors = [
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" },
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" },
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" },
+  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:"4000"},
+  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:"4000"},
+  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:"4000"},
 ];
 
 const Doctors = () => {
@@ -18,7 +19,9 @@ const Doctors = () => {
             <p className="text-gray-600 text-sm">{doctor.specialty} | {doctor.experience} exp</p>
             <p className="text-gray-600 text-sm">{doctor.hospital}</p>
             <p className="text-gray-600 text-sm">Languages: {doctor.languages}</p>
+            <Link to="/book-appointment" state={{ doctor }}>
             <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded-md hover:bg-white hover:text-teal-700 border-2 border-teal-700">BOOK APPOINTMENT</button>
+            </Link>
           </div>
         ))}
       </div>
