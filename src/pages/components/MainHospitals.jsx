@@ -1,6 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const hospitals = [
+  {
+    name: "Thakkar Hospital",
+    location: "Mumbai",
+    specialties: ["Dermatology", "Neurology"],
+    rating: 4.9,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRfP3SP_egbtep3svuW58aPB1A5IeIAJwoaQ&s",
+  },
   {
     name: "Apollo Hospitals",
     location: "Navi Mumbai",
@@ -231,9 +239,12 @@ function MainHospitals() {
                   <p className="text-gray-600 text-sm">📍 {hospital.location}</p>
                   <p className="text-gray-600 text-sm">🏥 Specialties: {hospital.specialties.join(", ")}</p>
                   <p className="text-gray-600 text-sm">⭐ {hospital.rating}</p>
-                  <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded-md hover:bg-white hover:text-teal-700 border-2 border-teal-700 self-start">
-                    VIEW DETAILS
-                  </button>
+                  <Link to="/HospitalsDetailsPage" state={{ hospital }}>
+  <button className="mt-4 bg-teal-700 text-white px-4 py-2 rounded-md hover:bg-white hover:text-teal-700 border-2 border-teal-700 self-start">
+    VIEW DETAILS
+  </button>
+</Link>
+
                 </div>
               </div>
             ))
