@@ -1,6 +1,5 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
-import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 
 function Cart() {
@@ -11,7 +10,7 @@ function Cart() {
 
   return (
     <>
-      <Header />
+      
       <NavBar />
       <div className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg mt-8 border">
         <h2 className="text-2xl font-bold text-teal-700 mb-4">Your Cart</h2>

@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Header from "./pages/components/Header.jsx";
 import HomePage from "./pages/HomePage";
 import DoctorPage from "./pages/DoctorPage";
 import HospitalPage from "./pages/HospitalPage";
@@ -11,8 +12,26 @@ import HospitalDetailsPage from "./pages/components/HospitalDetailsPage";
 import BuyMedicine from "./pages/BuyMedicines";
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  // On first render, check localStorage
+  useEffect(() => {
+    const storedAuth = localStorage.getItem("isAuthenticated");
+    if (storedAuth === "true") {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  // Update localStorage when auth state changes
+  useEffect(() => {
+    localStorage.setItem("isAuthenticated", isAuthenticated);
+  }, [isAuthenticated]);
   return (
     <Router>
+      <Header
+        isAuthenticated={isAuthenticated}
+        setIsAuthenticated={setIsAuthenticated}
+      />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/doctorpage" element={<DoctorPage />} />

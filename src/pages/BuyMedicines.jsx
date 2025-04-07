@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 
 const medicineSites = [
@@ -23,7 +22,7 @@ const medicineSites = [
 function BuyMedicine() {
   return (
     <>
-      <Header />
+
       <NavBar />
       <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg mt-8 border">
         <h2 className="text-3xl font-bold text-teal-700 mb-4">Buy Medicines Online</h2>
