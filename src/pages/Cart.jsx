@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 
 function Cart() {
   const { cart, removeFromCart } = useCart();
+  console.log("Cart contents:", cart);
 
   // Calculate total amount
   const totalAmount = cart.reduce((total, item) => total + (item.Fees || 0),0);
@@ -25,7 +26,7 @@ function Cart() {
                   <p><strong>{item.name}</strong> ({item.specialty})</p>
                   <p>{item.hospital} | {item.location}</p>
                   <p><strong>Date:</strong> {item.date} | <strong>Time:</strong> {item.time}</p>
-                  <p><strong>Fees:</strong> {item.Fees}</p>  {/* ✅ Fix Fees Display */}
+                  <p><strong>Fees:</strong> ₹{Number(item.Fees).toFixed(2)}</p>
                 </div>
                 <button
                   onClick={() => removeFromCart(index)}
@@ -39,7 +40,8 @@ function Cart() {
             {/* Total Amount */}
             <div className="bg-gray-200 p-4 rounded-md shadow-md mt-4 flex justify-between items-center">
               <h2 className="text-xl font-bold">Total Amount:</h2>
-              <h2 className="text-xl font-bold text-teal-700">{totalAmount}</h2>
+              <h2 className="text-xl font-bold text-teal-700">₹{totalAmount.toFixed(2)}</h2>
+
             </div>
             
             <button className="w-full bg-teal-700 text-white px-4 py-2 rounded-md hover:bg-white hover:text-teal-700 border-2 border-teal-700 mt-4">

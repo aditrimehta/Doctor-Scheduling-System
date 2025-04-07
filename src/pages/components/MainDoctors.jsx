@@ -10,7 +10,7 @@ export const doctors = [
     location: "Navi Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 4000"
+    Fees: 4000
   
   },
   {
@@ -21,7 +21,7 @@ export const doctors = [
     location: "Thane",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 1000"
+    Fees: 1000
   },
   {
     name: "Dr. Rajesh Khanna",
@@ -31,7 +31,7 @@ export const doctors = [
     location: "Navi Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 5000"
+    Fees: 5000
   },
   {
     name: "Dr. Priya Mehta",
@@ -41,7 +41,7 @@ export const doctors = [
     location: "Mumbai",
     languages: "English, Marathi, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 2000"
+    Fees: 2000
   },
   {
     name: "Dr. Aakash Verma",
@@ -51,7 +51,7 @@ export const doctors = [
     location: "Thane",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 4000"
+    Fees: 4000
   },
   {
     name: "Dr. Neha Agarwal",
@@ -61,7 +61,7 @@ export const doctors = [
     location: "Navi Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 3000"
+    Fees: 3000
   },
   {
     name: "Dr. Aman Patel",
@@ -71,7 +71,7 @@ export const doctors = [
     location: "Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 1000"
+    Fees: 1000
   },
   {
     name: "Dr. Sanya Kapoor",
@@ -81,7 +81,7 @@ export const doctors = [
     location: "Thane",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 2500"
+    Fees: 2500
   },
   {
     name: "Dr. Kunal Joshi",
@@ -91,7 +91,7 @@ export const doctors = [
     location: "Mumbai",
     languages: "English, Hindi, Marathi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 5000"
+    Fees: 5000
   },
   {
     name: "Dr. Parul Thakkar",
@@ -101,7 +101,7 @@ export const doctors = [
     location: "Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 2000"
+    Fees: 2000
   },
   {
     name: "Dr. Rahul Nair",
@@ -111,7 +111,7 @@ export const doctors = [
     location: "Thane",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 3500"
+    Fees: 3500
   },
   {
     name: "Dr. Meera Iyer",
@@ -121,7 +121,7 @@ export const doctors = [
     location: "Mumbai",
     languages: "English, Hindi",
     image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
-    Fees: "Rs. 2500"
+    Fees: 2500
   },
 ];
 

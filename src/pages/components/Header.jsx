@@ -41,7 +41,7 @@ const Header = ({ isAuthenticated, setIsAuthenticated }) => {
   ) : (
     <div className="relative z-10">
       <img
-        src="https://via.placeholder.com/40"
+        src="https://media.istockphoto.com/id/2151669184/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=UEa7oHoOL30ynvmJzSCIPrwwopJdfqzBs0q69ezQoM8="
         alt="Profile"
         className="w-10 h-10 rounded-full cursor-pointer"
         onClick={() => setShowDropdown(!showDropdown)}

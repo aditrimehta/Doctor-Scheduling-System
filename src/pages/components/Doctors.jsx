@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const doctors = [
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:"4000"},
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:"4000"},
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:"4000"},
+  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:4000},
+  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:4000},
+  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:4000},
 ];
 
 const Doctors = () => {

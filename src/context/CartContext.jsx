@@ -16,17 +16,25 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  const addToCart = (doctor, date, time) => {
+  const addToCart = (doctor, date, time, Fees) => {
+    console.log("Adding to cart:", {
+      ...doctor,
+      date,
+      time,
+      Fees
+    }); 
+  
     setCart((prevCart) => [
       ...prevCart,
-      { 
-        ...doctor, 
-        date, 
-        time, 
-        Fees: Number(doctor.Fees)  // Ensure Fees is a number
+      {
+        ...doctor,
+        date,
+        time,
+        Fees
       }
     ]);
   };
+  
   
 
   const removeFromCart = (index) => {

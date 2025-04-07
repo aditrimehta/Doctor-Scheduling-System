@@ -20,7 +20,8 @@ function BookAppointment() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addToCart(doctor, formData.date, formData.time);
+    console.log("Doctor's fee:", doctor.Fees);
+    addToCart(doctor, formData.date, formData.time,Number(doctor.Fees));
     alert("Appointment added to cart!");
   };
 
