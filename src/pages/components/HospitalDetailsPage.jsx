@@ -21,7 +21,7 @@ function HospitalDetailsPage() {
 
   return (
     <>
-      <Header />
+     
       <NavBar />
       <div className="container mx-auto py-10 px-10">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
