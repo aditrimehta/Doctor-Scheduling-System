@@ -2,9 +2,46 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const doctors = [
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:4000},
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:4000},
-  { name: "Dr. Abhijit Bagde", specialty: "Pediatrics, Critical Care", experience: "10 years", hospital: "Apollo Hospitals, Navi Mumbai", languages: "English, Hindi", image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg" ,location:"Goregaon", Fees:4000},
+  {
+    name: "Dr. Abhijit Bagde",
+    specialty: "Cardiology",
+    experience: "10 years",
+    hospital: "Apollo Hospitals",
+    location: "Navi Mumbai",
+    languages: "English, Hindi",
+    image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: 4000
+  
+  },
+  {
+    name: "Dr. Riya Sharma",
+    specialty: "Orthopedics",
+    experience: "15 years",
+    hospital: "Fortis Hospital",
+    location: "Thane",
+    languages: "English, Hindi",
+    image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: 1000
+  },
+  {
+    name: "Dr. Rajesh Khanna",
+    specialty: "Neurology",
+    experience: "12 years",
+    hospital: "AIIMS Mumbai",
+    location: "Navi Mumbai",
+    languages: "English, Hindi",
+    image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: 5000
+  },{
+    name: "Dr. Priya Mehta",
+    specialty: "Dermatology",
+    experience: "8 years",
+    hospital: "Max Healthcare",
+    location: "Mumbai",
+    languages: "English, Marathi, Hindi",
+    image: "https://t4.ftcdn.net/jpg/07/07/89/33/360_F_707893394_5DEhlBjWOmse1nyu0rC9T7ZRvsAFDkYC.jpg",
+    Fees: 2000
+  },
 ];
 
 const Doctors = () => {
